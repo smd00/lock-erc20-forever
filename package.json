@@ -1,0 +1,28 @@
+{
+  "name": "lock-erc20-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "REPORT_GAS=true npx hardhat test",
+    "deployLockForever": "npx hardhat run scripts/deployLockForever.js --network mumbai",
+    "deployToken": "npx hardhat run scripts/deployToken.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smd00/lock-erc20-contract.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smd00/lock-erc20-contract/issues"
+  },
+  "homepage": "https://github.com/smd00/lock-erc20-contract#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

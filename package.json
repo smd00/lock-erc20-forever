@@ -1,5 +1,5 @@
 {
-  "name": "lock-erc20-contract",
+  "name": "lock-erc20-forever",
   "version": "1.0.0",
   "description": "",
   "main": "hardhat.config.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smd00/lock-erc20-contract.git"
+    "url": "git+https://github.com/smd00/lock-erc20-forever.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/smd00/lock-erc20-contract/issues"
+    "url": "https://github.com/smd00/lock-erc20-forever/issues"
   },
-  "homepage": "https://github.com/smd00/lock-erc20-contract#readme",
+  "homepage": "https://github.com/smd00/lock-erc20-forever#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.11.2"

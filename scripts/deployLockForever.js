@@ -11,7 +11,7 @@ async function main() {
   console.log("Deploying LockForever contract with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  const tokenToLock = "0x7236F4A0890ba9e99d1Ac15D0f04a6A356cB1B93"; // npx hardhat run scripts/deployToken.js --network mumbai
+  const tokenToLock = "0x75faC1420ba14aDeAFa4479AbbACeadA792eB9d2"; // npx hardhat run scripts/deployToken.js --network mumbai
   
   const name = "Burnt LEF";
   const symbol = "burntLEF";

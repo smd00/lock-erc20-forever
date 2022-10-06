@@ -6,7 +6,7 @@
   "scripts": {
     "test": "REPORT_GAS=true npx hardhat test",
     "deployLockForever": "npx hardhat run scripts/deployLockForever.js --network mumbai",
-    "deployToken": "npx hardhat run scripts/deployToken.js"
+    "deployToken": "npx hardhat run scripts/deployToken.js --network mumbai"
   },
   "repository": {
     "type": "git",

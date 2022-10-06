@@ -1,17 +1,20 @@
 const LockForever = artifacts.require("LockForever");
 const ERC20 = artifacts.require("ERC20");
 
+require('dotenv').config();
+const { TOKEN_TO_LOCK } = process.env;
+
 module.exports = async function (deployer) {
 
     // ===================== LockForever Contract parameters START
+    const tokenToLock = TOKEN_TO_LOCK;
+
     // Staging
-    const tokenToLock = "0x7236F4A0890ba9e99d1Ac15D0f04a6A356cB1B93";
     const name = "Burnt DMHT";
     const symbol = "burntDMHT";
     const decimals = 18
 
     // Prod
-    // const tokenToLock = "0x72b9f88e822cf08b031c2206612b025a82fb303c";
     //   const name = "Burnt DBD";
     //   const symbol = "burntDBD";
     //   const decimals = 18

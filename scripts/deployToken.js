@@ -8,7 +8,7 @@ async function main() {
 
     const ownerAddress = deployer.address;
     const name = "LEF Token";
-    const symbol = "LEF";
+    const symbol = "LEFT";
     const decimals = 18
     const initialSupply = hre.ethers.utils.parseEther("800000000");
     

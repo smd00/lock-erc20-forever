@@ -29,7 +29,7 @@ describe("Token contract", function () {
     // Token
     const tokenOwner = owner.address;
     const tokenName = "LEF Token";
-    const tokenSymbol = "LEF";
+    const tokenSymbol = "LEFT";
     const tokenDecimals = 18
     const tokenInitialSupply = hre.ethers.utils.parseEther("800000000");
     
@@ -49,8 +49,8 @@ describe("Token contract", function () {
     );
 
     // LockForever
-    const burntTokenName = "Burnt LEF";
-    const burntTokenSymbol = "burntLEF";
+    const burntTokenName = "Burnt LEFT";
+    const burntTokenSymbol = "burntLEFT";
     const burntTokenDecimals = 18
 
     const LockForever = await ethers.getContractFactory("LockForever");

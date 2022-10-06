@@ -6,15 +6,18 @@
 // global scope, and execute the script.
 const hre = require("hardhat");
 
+require('dotenv').config();
+const { TOKEN_TO_LOCK } = process.env;
+
 async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying LockForever contract with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  const tokenToLock = "0x75faC1420ba14aDeAFa4479AbbACeadA792eB9d2"; // npx hardhat run scripts/deployToken.js --network mumbai
+  const tokenToLock = TOKEN_TO_LOCK; // npx hardhat run scripts/deployToken.js --network mumbai
   
-  const name = "Burnt LEF";
-  const symbol = "burntLEF";
+  const name = "Burnt LEFT";
+  const symbol = "burntLEFT";
   const decimals = 18
 
   const etherAmount = hre.ethers.utils.parseEther("0");

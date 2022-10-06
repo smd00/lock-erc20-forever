@@ -1,11 +1,14 @@
 const LockForever = artifacts.require("LockForever");
 const ERC20 = artifacts.require("ERC20");
 
+require('dotenv').config();
+const { TOKEN_TO_LOCK } = process.env;
+
 module.exports = async function (deployer) {
 
     // ===================== Token to lock START
     // const TokenToLockDeployed = await ERC20.deployed();
-    const tokenToLock = "0x7236F4A0890ba9e99d1Ac15D0f04a6A356cB1B93";
+    const tokenToLock = TOKEN_TO_LOCK;
     const TokenToLockDeployed = await ERC20.at(tokenToLock);
     // ===================== Token to lock END
 

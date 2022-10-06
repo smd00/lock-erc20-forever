@@ -1,0 +1,28 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.3
+
+jobs:
+  build_test:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: node_modules
+          override-ci-command: npm i
+      - run:
+          command: node --version && npm --version && ls -lah
+          name: Check versions
+      - run:
+          command: npm run test
+          name: Run tests
+      - run:
+          command: npm run deployLockForever
+          name: Deploy LockForever
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build_test

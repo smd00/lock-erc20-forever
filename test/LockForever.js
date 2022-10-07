@@ -111,7 +111,7 @@ describe("Token contract", function () {
       // Allowance is 0
       await expect(
         lockForever.lock(owner.address, 50)
-        ).to.be.revertedWith("ERC20: insufficient allowance");
+        ).to.be.revertedWith("Lock Forever: Insufficient allowance");
 
       // Approve spend
       await token.approve(lockForever.address, 50);

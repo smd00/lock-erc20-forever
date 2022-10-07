@@ -33,7 +33,7 @@ async function main() {
     `Symbol      ${await lockForever.symbol()}\n`,
     `Decimals    ${await lockForever.decimals()}\n`,
     `TotalSupply ${await lockForever.totalSupply()}\n`,
-    `TokenToLock ${await lockForever.getTokenToLock()}\n`,
+    // `TokenToLock ${await lockForever.tokenToLock()}\n`,
     `Owner       ${await lockForever.owner()}\n`,
     `============\n`,
   );

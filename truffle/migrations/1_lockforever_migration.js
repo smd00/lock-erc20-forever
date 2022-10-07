@@ -52,7 +52,6 @@ module.exports = async function (deployer) {
         `Symbol      ${await LockForeverDeployed.symbol()}\n`,
         `Decimals    ${await LockForeverDeployed.decimals()}\n`,
         `TotalSupply ${await LockForeverDeployed.totalSupply()}\n`,
-        `TokenToLock ${await LockForeverDeployed.getTokenToLock()}\n`,
         `Owner       ${await LockForeverDeployed.owner()}\n`,
         `==========================\n`,
     );

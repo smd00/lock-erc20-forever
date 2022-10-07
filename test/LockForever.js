@@ -64,7 +64,7 @@ describe("Token contract", function () {
       `Symbol      ${await lockForever.symbol()}\n`,
       `Decimals    ${await lockForever.decimals()}\n`,
       `TotalSupply ${await lockForever.totalSupply()}\n`,
-      `TokenToLock ${await lockForever.getTokenToLock()}\n`,
+      // `TokenToLock ${await lockForever.getTokenToLock()}\n`,
       `Owner       ${await lockForever.owner()}\n`,
       `============\n`,
     );
@@ -84,7 +84,7 @@ describe("Token contract", function () {
 
     it("Should set the right token to lock forever", async function () {
       const { token, lockForever, owner } = await loadFixture(deployTokenFixture);
-      expect(await lockForever.getTokenToLock()).to.equal(token.address);
+      expect(await lockForever.tokenToLock()).to.equal(token.address);
     });
 
     it("Should assign the total supply of tokens to the owner", async function () {

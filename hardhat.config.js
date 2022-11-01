@@ -16,7 +16,8 @@ module.exports = {
       accounts: [MNEMONIC]
     },
     polygon: {
-      url: `https://polygon-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
+      url: `https://rpc.ankr.com/polygon`,
+      // url: `https://polygon-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [MNEMONIC]
     }
   }

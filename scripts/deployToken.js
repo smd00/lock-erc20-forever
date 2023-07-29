@@ -7,10 +7,10 @@ async function main() {
     console.log("Account balance:", (await deployer.getBalance()).toString());
 
     const ownerAddress = deployer.address;
-    const name = "LEF Token";
-    const symbol = "LEFT";
+    const name = "Test R";
+    const symbol = "TESTR";
     const decimals = 18
-    const initialSupply = hre.ethers.utils.parseEther("800000000");
+    const initialSupply = hre.ethers.utils.parseEther("21000000");
     
     const Token = await ethers.getContractFactory("Token");
     const token = await Token.deploy(ownerAddress, name, symbol, decimals, initialSupply);

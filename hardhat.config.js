@@ -1,7 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 
 require('dotenv').config();
-const { MNEMONIC, ALCHEMY_API_KEY } = process.env;
+const { MNEMONIC, ALCHEMY_API_KEY, ETHERSCAN_MUMBAI } = process.env;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -19,6 +19,11 @@ module.exports = {
       url: `https://rpc.ankr.com/polygon`,
       // url: `https://polygon-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [MNEMONIC]
+    }
+  }, etherscan: {
+    apiKey: {
+      polygon: ``,
+      polygonMumbai: `${ETHERSCAN_MUMBAI}`,
     }
   }
 };
